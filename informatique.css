@@ -1,0 +1,226 @@
+/* Code pour le menu*/
+body{
+	margin: 5px;
+	padding: 5px;
+} 
+
+.logo {
+	box-shadow: 0px 3px 10px #777;
+}
+
+nav{
+	font-family: Verdana;
+	margin: 0 auto;
+	position: sticky;
+    top: 0px
+}
+ 
+nav ul{
+	list-style-type: none;
+}
+ 
+ 
+nav ul li{
+	float: left;
+	margin-right: 0px;
+	position: relative;
+}
+ 
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 40px;
+} 
+ 
+nav a:hover{
+    color: red;
+	background-color: #8ee8ff;  /* coleur du menu au passage de la souris */
+	border-bottom: 2px solid #0080ff;
+}
+ 
+.submenu li{
+	border-top: 2px solid #0080ff;
+	background-color: #8ee8ff;
+} 
+ 
+.submenu li a{
+	padding: 15px 20px;
+	width: 250px;
+} 
+ 
+.submenu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+} 
+ 
+nav > ul li:hover .submenu{
+    display: block;
+	padding: 0px 0px;  /* positionnement de chaque menu*/
+}
+ 
+.submenu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+} 
+ 
+.submenu a{
+    padding: 10px;
+    border-bottom: none;
+}
+ 
+.submenu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+
+}
+ 
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	letf: 0px;
+	padding: 0px;
+	z-index: 1000;
+} 
+
+.contenumenu{
+	width: 1300px;
+	margin: 5px auto;
+	position: relative;
+	z-index: 2;
+}
+
+/**/
+
+.realinfo{
+	width: 1800px;
+	margin: 0px auto;
+}
+
+.realinfo1{
+	box-shadow: 0px 3px 10px #777;
+}
+
+.realinfo2{
+	box-shadow: 0px 3px 10px #777;
+}
+
+.realinfo3{
+	box-shadow: 0px 3px 10px #777;
+}
+
+/* Diapo informatique*/
+
+.imagesInformatiques{
+	width: 1200px;
+	margin: 0px auto;
+	margin-left: 320px;
+}
+
+.textcenter{
+	justify-content: center;
+}
+
+
+/* animation  texte */
+
+.lesnoms{
+	display: flex;
+	justify-content: center;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 18px;
+} 
+
+.animate{
+	height: 40px;
+	background: white;
+	overflow: hidden;
+	border-top: 2px solid #0080ff;
+	background-color: #8ee8ff;
+
+}
+
+.animate > div {
+	height: 40px;
+	padding: 4px 12px;
+	margin-bottom: 65px;
+	
+} 
+
+.animate div {
+	animation: texte 19s linear infinite;
+	margin-top: 3px;
+
+}
+
+
+@keyframes texte {
+	0% { margin-top: -100px; }
+	5% { margin-top: -74px; }
+	30% { margin-top: -74px; }
+	35% { margin-top: -55px; }
+	55% { margin-top: -55px; }
+	60% { margin-top: 3px; }
+	80% { margin-top: 3px; }
+	85% { margin-top: 40px; }
+	99.99% { margin-top: 40px; }
+	100% { margin-top: -100px; }
+}
+
+/* Code pour le pied de page*/
+footer {
+	background-color: #c0c3c5;
+	padding: 10px;
+}
+
+footer P{
+	margin-left: 15px;
+}
+
+.contenufooter{
+	width: 1850px;
+	margin: 10px auto;
+}
+
+.tabfooter {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.tabtr a img{
+  margin: 20px;
+}
+
+.tabtd:nth-child(1) {
+  width: 33%;
+}
+
+.tabtd:nth-child(2) {
+  width: 33%;
+}
+
+.tabtd:nth-child(3) {
+  width: 34%;
+}
+
+
+.tabtd {
+  padding: 10px;
+}
+
+.tabtd a {
+  text-decoration: none;
+}
+
+.tabtd a:hover {
+  color: red;
+}
+
+/* */
